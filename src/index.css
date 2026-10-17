@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --background: #080b1b;
+  --surface: rgba(20, 25, 53, 0.78);
+  --surface-light: rgba(35, 42, 79, 0.55);
+
+  --text: #f4f6ff;
+  --muted: #929bbd;
+  --border: rgba(167, 182, 255, 0.12);
+
+  --cyan: #6ee7f9;
+  --violet: #9d8bff;
+  --blue: #688cff;
+
+  --radius-large: 28px;
+  --radius-medium: 20px;
+
+  --page-width: 1180px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+
+  background:
+    radial-gradient(
+      ellipse at 12% 12%,
+      rgba(70, 83, 178, 0.16),
+      transparent 34%
+    ),
+    radial-gradient(
+      ellipse at 88% 38%,
+      rgba(83, 48, 153, 0.15),
+      transparent 35%
+    ),
+    var(--background);
+
+  color: var(--text);
+
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 4px;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: rgba(110, 231, 249, 0.3);
+  color: white;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
