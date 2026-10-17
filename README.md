@@ -1,70 +1,112 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🌦️ Atmosphere – Weather Report Application
 
-## Available Scripts
+Atmosphere is a modern and responsive weather application built with React JS, Axios, JavaScript, and CSS. It uses the OpenWeatherMap API to provide real-time weather updates and a five-day forecast with a clean, attractive user interface.
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🔍 Search for weather by city name
+- 🌡️ Display current temperature and feels-like temperature
+- 💧 View humidity and atmospheric pressure
+- 🌬️ Check wind speed and visibility
+- ☁️ View cloud coverage and weather conditions
+- 📅 Five-day weather forecast
+- 🔄 Switch between Celsius and Fahrenheit
+- 📱 Responsive design for desktop, tablet, and mobile
+- ⚠️ Loading indicators and error handling
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React JS
+- JavaScript
+- Axios
+- HTML5
+- CSS3
+- OpenWeatherMap API
+- Create React App
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm installed
+- A code editor such as Visual Studio Code
+- An OpenWeatherMap API key
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/YOUR-USERNAME/atmosphere-weather-app.git
+   ```
 
-### `npm run eject`
+2. Navigate to the project folder:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd atmosphere-weather-app
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Create a `.env` file in the root directory and add:
 
-## Learn More
+   ```env
+   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Start the application:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm start
+   ```
 
-### Code Splitting
+6. Open http://localhost:3000 in your browser.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🔑 API Configuration
 
-### Analyzing the Bundle Size
+Get an API key from [OpenWeatherMap](https://openweathermap.org/api).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Replace `your_api_key_here` with your API key. Newly created keys may take some time to become active.
 
-### Making a Progressive Web App
+**Security:** Never upload your actual `.env` file or expose your API key in a public repository.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📂 Project Structure
 
-### Advanced Configuration
+```text
+atmosphere-weather-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── CurrentWeather.js
+│   │   ├── ErrorMessage.js
+│   │   ├── Forecast.js
+│   │   ├── SearchBar.js
+│   │   ├── WeatherApp.js
+│   │   └── WeatherDetails.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│   └── index.css
+├── .env.example
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Project Objective
 
-### Deployment
+The objective of Atmosphere is to provide accessible and easy-to-understand weather information through a responsive interface while demonstrating React development, API integration, state management, and modern CSS styling.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 👩‍💻 Author
 
-### `npm run build` fails to minify
+Developed as a React JS project to practice frontend development and real-time API integration.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is available for educational and personal learning purposes.
+
